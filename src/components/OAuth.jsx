@@ -31,6 +31,11 @@ const OAuth = () => {
       navigate('/')
     } catch (error) {
       toast.error('Could not authorize with Google')
+      console.log(error.code)
+      console.log(error.message)
+      console.log(error.error.customData.email)
+      const credential = GoogleAuthProvider.credentialFromError(error)
+      console.log(credential)
     }
   }
 
