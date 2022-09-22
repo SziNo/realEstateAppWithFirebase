@@ -86,7 +86,6 @@ button {
   right: 20px;
 }
 
-.pageContainer,
 .offers,
 .profile,
 .listingDetails,
@@ -94,6 +93,12 @@ button {
 .explore {
   margin: 1rem;
 }
+
+.pageContainer {
+  margin: 1rem;
+  min-height: 110vh;
+}
+
 @media (min-width: 1024px) {
   .pageContainer,
   .offers,
