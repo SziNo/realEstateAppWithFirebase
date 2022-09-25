@@ -11,6 +11,7 @@ import ForgotPassword from './pages/ForgotPassword'
 import Navbar from './components/Navbar'
 import PrivateRoute from './components/PrivateRoute'
 import CreateListing from './pages/CreateListing'
+import EditListing from './pages/EditListing'
 import Listing from './pages/Listing'
 import Contact from './pages/Contact'
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/forgotpassword' element={<ForgotPassword />} />
           <Route path='/createlisting' element={<CreateListing />} />
+          <Route path='/editlisting/:listingId' element={<EditListing />} />
           <Route
             path='/category/:categoryName/:listingId'
             element={<Listing />}
