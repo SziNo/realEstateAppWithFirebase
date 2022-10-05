@@ -10,7 +10,11 @@ const useAuthStatus = () => {
     if (isMounted) {
       const auth = getAuth()
       onAuthStateChanged(auth, (user) => {
-        user && setLoggedIn(true)
+        if (user) {
+          setLoggedIn(true)
+        } else {
+          setLoggedIn(false)
+        }
         setCheckingStatus(false)
       })
     }
