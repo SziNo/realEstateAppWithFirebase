@@ -67,7 +67,7 @@ const Category = () => {
 
       {loading ? (
         <Spinner />
-      ) : listings && listings.length > 0 ? (
+      ) : listings?.length > 0 ? (
         <>
           <main>
             <ul className='categoryListings'>
